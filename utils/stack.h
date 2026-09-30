@@ -12,5 +12,6 @@ Stack create_stack(int size);
 void push(Stack *stack, int value);
 int pop(Stack *stack);
 int peek(Stack *stack);
+void destroy_stack(Stack *stack);
 
 #endif

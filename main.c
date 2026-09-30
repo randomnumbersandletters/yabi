@@ -110,5 +110,7 @@ int main(int argc, char **argv)
         interpret_token(program[PROGRAM_POINTER], memory, program);
     }
 
+    destroy_stack(&parenthesis_stack);
+
     return 0;
 }

@@ -5,7 +5,7 @@
 
 Stack create_stack(int size)
 {
-    return (Stack){.data= malloc(sizeof(char) * size), .size = 0};
+    return (Stack){.data = malloc(sizeof(char) * size)};
 }
 
 void push(Stack *stack, int value)
@@ -35,4 +35,9 @@ int pop(Stack *stack)
 int peek(Stack *stack)
 {
     return stack->top_value;
+}
+
+void destroy_stack(Stack *stack)
+{
+    free(stack->data);
 }
