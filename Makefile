@@ -1,6 +1,6 @@
 CC := gcc
-CFLAGS := -Wall -Wextra -Wpedantic -std=c23
-DEBUGFLAGS := $(CFLAGS) -g -fanalyzer
+CFLAGS := -std=c23 -O3
+DEBUGFLAGS := -Wall -Wextra -Wpedantic -g -fanalyzer -std=c23
 
 .PHONY: clean debug
 
